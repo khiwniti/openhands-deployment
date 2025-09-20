@@ -3,10 +3,14 @@
 FROM node:20-slim
 
 # Install Python and pip
-RUN apt-get update && apt-get install -y python3 python3-pip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y python3 python3-pip python3-venv && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
 WORKDIR /app
+
+# Create and activate a Python virtual environment
+RUN python3 -m venv venv
+ENV PATH="/app/venv/bin:$PATH"
 
 # Copy package.json and install Node.js dependencies for copilot-api
 COPY package.json package-lock.json ./ 
