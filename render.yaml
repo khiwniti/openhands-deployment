@@ -1,0 +1,17 @@
+
+services:
+  - type: web
+    name: openhands-copilot
+    env: docker
+    buildCommand: "npm install"
+    startCommand: "npx copilot-api@latest start & python3 openhands/main.py"
+    ports:
+      - port: 4141
+        protocol: http
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false # Set this to true if you want to sync with Render's environment variables
+      - key: OPENAI_API_BASE
+        value: http://localhost:4141/v1
+
+

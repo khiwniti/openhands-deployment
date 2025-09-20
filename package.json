@@ -1,0 +1,16 @@
+{
+  "name": "copilot-api-wrapper",
+  "version": "1.0.0",
+  "description": "Wrapper for GitHub Copilot API",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx copilot-api@latest start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "copilot-api": "^0.5.14"
+  }
+}
+

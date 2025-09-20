@@ -1,0 +1,5 @@
+llm:
+  model: "gpt-4.1-copilot" # Or any other model listed by copilot-api
+  api_key: "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" # Placeholder, will be replaced by actual key or env var
+  base_url: "http://localhost:4141/v1" # copilot-api endpoint
+
