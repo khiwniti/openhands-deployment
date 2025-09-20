@@ -13,9 +13,9 @@
 - [x] Create Render.yaml
 
 ### Phase 4: Set up GitHub remote and push the repository
-- [ ] Create a new GitHub repository
-- [ ] Add GitHub remote to local repository
-- [ ] Push initial commit to GitHub
+- [x] Create a new GitHub repository
+- [x] Add GitHub remote to local repository
+- [x] Push initial commit to GitHub
 
 ### Phase 5: Deliver the GitHub repository URL to the user
 - [ ] Provide the GitHub repository URL
